@@ -19,6 +19,7 @@
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage[parfill]{parskip}
+\RequirePackage{multicol}
 
 \RequirePackage{hyperref}
 \def\DefaultHeightofCheckBox{0.6\baselineskip}
