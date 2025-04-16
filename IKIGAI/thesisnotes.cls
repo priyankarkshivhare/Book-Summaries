@@ -32,7 +32,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\today}
-\lhead{Notes}
+\lhead{IKIGAI}
 \rfoot{\thepage}
 \lfoot{\textit{Summary by Priyankar}}
 
