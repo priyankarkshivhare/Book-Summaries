@@ -18,7 +18,7 @@
 \RequirePackage{tcolorbox}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
-\RequirePackage[parfill]{parskip}
+\RequirePackage[parfill]{parskip} % For Non Indented paragraphs
 \RequirePackage{multicol}
 
 \RequirePackage{hyperref}
