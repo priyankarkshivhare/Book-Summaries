@@ -10,8 +10,10 @@
 \RequirePackage{tikz}
 \RequirePackage{eso-pic} % for absolute positioning on page
 \RequirePackage{etoolbox}
-\RequirePackage[parfill]{parskip} 
+\RequirePackage[parfill]{parskip}
+\RequirePackage{multicol}
 \RequirePackage{hyperref}
+\RequirePackage{tabularx}
 
 % Load xcolor with named and custom colors
 \RequirePackage[x11names]{xcolor}
@@ -48,7 +50,7 @@
   {\normalsize\itshape \@tagline \par}
   
   \vspace{1.5em}
-  {\Huge\bfseries \textcolor{documentblue}{\@title} \par}
+  {\raggedright\Huge\bfseries \textcolor{documentblue}{\@title} \par}
   \vspace{0.2em}
   {\normalsize \textcolor{documentpink}{\@author} \par}
   
@@ -70,13 +72,13 @@
   \begin{tikzpicture}[remember picture, overlay]
     \ifnum\value{page}=1
       % Top-right corner
-      \node[anchor=north east, inner sep=0pt] at (current page.north east) {\includegraphics{title-right.png}};      
+      \node[anchor=north east, inner sep=0pt] at (current page.north east) {\includegraphics{../Template/title-right.png}};
     \else
       % Top-right corner
-      \node[anchor=north east, inner sep=0pt] at (current page.north east) {\includegraphics{header-right.png}};
+      \node[anchor=north east, inner sep=0pt] at (current page.north east) {\includegraphics{../Template/header-right.png}};
     \fi
     % Bottom-left corner
-    \node[anchor=south west, inner sep=0pt] at (current page.south west) {\includegraphics[width=\paperwidth]{footer.png}};
+    \node[anchor=south west, inner sep=0pt] at (current page.south west) {\includegraphics[width=\paperwidth]{../Template/footer.png}};
   \end{tikzpicture}%
 }
 
