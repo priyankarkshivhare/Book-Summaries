@@ -4,7 +4,8 @@
 \LoadClass[12pt]{article}
 
 % Required packages
-\RequirePackage[a4paper,margin=1.1in]{geometry}
+% \RequirePackage[a4paper,margin=1.1in]{geometry}
+\RequirePackage[a4paper,left=1in, right=1in, top=1in, bottom=1.2in]{geometry}
 \RequirePackage{fancyhdr}
 \RequirePackage{graphicx}
 \RequirePackage{tikz}
@@ -12,6 +13,7 @@
 \RequirePackage{etoolbox}
 \RequirePackage[parfill]{parskip} 
 \RequirePackage{hyperref}
+\RequirePackage{tabularx}
 
 % Load xcolor with named and custom colors
 \RequirePackage[x11names]{xcolor}
