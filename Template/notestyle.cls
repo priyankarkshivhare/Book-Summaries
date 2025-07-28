@@ -1,4 +1,4 @@
-\ProvidesClass{notestyle}[2025/04/15 Custom Artile Style]
+\ProvidesClass{notestyle}[2025/04/15 Custom article Style]
 
 % Load base class
 \LoadClass[12pt]{article}
@@ -55,8 +55,8 @@
   {\normalsize \textcolor{documentpink}{\@author} \par}
   
   \vspace{0.2em}
-  \IfFileExists{\@documentimage}{
-    \includegraphics[width=\textwidth]{\@documentimage}
+  \IfFileExists{\@documentimage}{%
+    \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{\@documentimage}%
   }{
     % Fallback if image doesn't exist
     \rule{0.35\textwidth}{0.2\textwidth}

@@ -1,0 +1,30 @@
+\documentclass{notestyle}
+
+% Set metadata
+\companyname{Book Summary}
+\tagline{Structured summaries for structured minds}
+\title{The Courage to be Disliked}
+\author{Priyankar}
+\documentimage{Assets/cover-image.jpg} % This image should exist in the directory
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\clearpage
+
+\input{Chapters/summary.tex}
+\input{Chapters/quotes.tex}
+\input{Chapters/actionable_insights.tex}
+\input{Chapters/chapter1.tex}
+\input{Chapters/chapter2.tex}
+\input{Chapters/chapter3.tex}
+\input{Chapters/chapter4.tex}
+\input{Chapters/chapter5.tex}
+\input{Chapters/keywords.tex}
+
+\bibliographystyle{plain}
+\bibliography{Chapters/references.bib}
+\nocite{*}
+
+\end{document}
