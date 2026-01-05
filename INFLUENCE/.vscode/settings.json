@@ -12,12 +12,24 @@
         "env": {
           "TEXINPUTS": "../Template//;"
         }
-      }
+      },
+      {
+        "name": "bibtex",
+        "command": "bibtex",
+        "args": [
+            "%DOCFILE%"
+        ]
+      },
     ],
     "latex-workshop.latex.recipes": [
       {
-        "name": "pdflatex",
-        "tools": ["pdflatex"]
+        "name": "pdflatex->bibtex->pdflatex*2",
+        "tools": [
+          "pdflatex",
+          "bibtex",
+          "pdflatex",
+          "pdflatex"
+        ]
       }
     ]
   }
